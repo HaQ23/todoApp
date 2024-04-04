@@ -1,0 +1,56 @@
+<section class="login">
+  <h2 class="login__title">Zaloguj się</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="login__form">
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Nazwa użytkownika</mat-label>
+        <input
+          [(ngModel)]="userData.userName"
+          class="input"
+          matInput
+          minlength="4"
+          formControlName="userName"
+          required
+        />
+        <mat-error *ngIf="controls.userName.invalid"
+          >{{ getErrorMessage(controls.userName) }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Wpisz swoje hasło</mat-label>
+        <input
+          [(ngModel)]="userData.password"
+          class="input"
+          formControlName="password"
+          matInput
+          [type]="hide ? 'password' : 'text'"
+          minlength="6"
+          required
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+        <mat-error *ngIf="controls.password.invalid"
+          >{{ getErrorMessage(controls.password) }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <button class="login__btn" type="submit" mat-raised-button color="primary">
+      Zaloguj się
+    </button>
+    <p class="login__text">
+      Nie masz konta?
+      <button routerLink="/zarejestruj" class="signIn-btn">
+        Zarejestruj się</button
+      >.
+    </p>
+  </form>
+</section>

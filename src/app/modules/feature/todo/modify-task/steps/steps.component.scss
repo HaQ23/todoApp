@@ -1,0 +1,9 @@
+.step-items {
+  max-height: 50vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="add-task-container">
+  <button (click)="addNewTodo()" class="add-task-btn">
+    <mat-icon class="icon" aria-hidden="false" aria-label="Example home icon"
+      >add</mat-icon
+    >
+  </button>
+  <input
+    #taskInput="ngModel"
+    required
+    [(ngModel)]="taskName"
+    class="add-task-input"
+    type="text"
+    placeholder="dodaj zadanie"
+    name="taskName"
+    (keyup.enter)="addNewTodo()"
+  />
+</div>

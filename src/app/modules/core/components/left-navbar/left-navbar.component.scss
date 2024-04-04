@@ -1,0 +1,42 @@
+[mat-list-item] {
+  padding-right: 4rem;
+  position: relative;
+  .line {
+    display: none;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    height: auto;
+    left: 2px;
+    width: 4px;
+    background-color: #3f51b5;
+    border-radius: 24px;
+  }
+  .box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .icon {
+      color: #3f51b5;
+    }
+  }
+
+  &:hover {
+    background-color: #dbdbdb;
+  }
+}
+.active-link {
+  background-color: #e6e6e6;
+  .line {
+    display: block;
+  }
+}
+mat-list {
+  padding: 3rem 0.25rem 0 0.25rem;
+}
+[mat-list-item] {
+  border: none;
+  cursor: pointer;
+}

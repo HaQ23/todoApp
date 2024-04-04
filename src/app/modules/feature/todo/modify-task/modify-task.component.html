@@ -1,0 +1,217 @@
+<section [@slideFromRight] class="modify-task">
+  <div class="modify-task__wrapper">
+    <button class="close-btn" #hamBtn (click)="onClose()">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+    </button>
+    <div class="modify-task__main-content">
+      <div class="todo-list-item input-text-box">
+        <div class="box">
+          <button
+            class="isCompleted-btn"
+            (click)="changeTodoStatus($event)"
+            [ngClass]="{ isCompleted: todo.isCompleteted }"
+            matTooltip="{{
+              todo.isImportant
+                ? 'Oznacz jako wykonane'
+                : 'Oznacz jako niewykonane'
+            }}"
+            [matTooltipShowDelay]="showDelay.value"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </button>
+
+          <span
+            (blur)="changeTodoName()"
+            #textArea
+            contenteditable
+            role="textbox"
+            class="todo-item input-text"
+            [ngClass]="{ 'text-decoration-line-through': todo.isCompleteted }"
+          ></span>
+        </div>
+        <button
+          class="isImportant-btn"
+          (click)="changeImportanceTodo($event)"
+          [ngClass]="{ isImportant: todo.isImportant }"
+          matTooltip="{{
+            todo.isImportant ? 'Oznacz jako nieważne' : 'Oznacz jako ważne'
+          }}"
+          [matTooltipShowDelay]="showDelay.value"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="#fff"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon feather-star"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+        </button>
+      </div>
+      <app-steps [todo]="todo" *ngIf="todo.steps.length > 0"></app-steps>
+      <div class="add-step-box input-text-box" (click)="focusOnSpan()">
+        <button class="stepIsCompleted-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon done-icon"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#3f51b5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="plus-icon icon"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <span
+          (blur)="handleBlur(); addNewStep()"
+          #addNewStepEl
+          contenteditable
+          role="textbox"
+          class="add-step-input input-text"
+          >Kolejny krok</span
+        >
+      </div>
+    </div>
+    <mat-form-field>
+      <div class="mat-form-input-box">
+        <svg
+          *ngIf="todo.plannedDate"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#3f51b5"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather-calendar icon"
+        >
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+
+        <input
+          class="data-input"
+          #dateInput
+          readonly
+          matInput
+          placeholder="Dodaj termin wykonania"
+          [value]="todo.plannedDate ? todo.plannedDate : 'Wybierz datę'"
+          [matDatepicker]="picker"
+          [(ngModel)]="selectedDate"
+          (dateChange)="addPlannedDate()"
+          (click)="picker.open()"
+        />
+      </div>
+      <mat-datepicker-toggle
+        *ngIf="!todo.plannedDate"
+        matSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <button
+        (click)="deletePlannedDate()"
+        *ngIf="todo.plannedDate"
+        mat-icon-button
+      >
+        <mat-icon>clear</mat-icon>
+      </button>
+    </mat-form-field>
+    <button
+      [ngClass]="{ isAdd: todo.isTodayDay }"
+      class="addTodayDay"
+      (click)="changeIsTodayDay()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-sun"
+      >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <span class="button-text">
+        {{ todo.isTodayDay ? "Usun z 'Mój dzien'" : "Dodaj do 'Mój dzien'" }}
+      </span>
+    </button>
+    <button
+      (click)="showDeleteTodoModal()"
+      class="delete-btn"
+      mat-raised-button
+      color="warn"
+    >
+      Usuń zadanie
+    </button>
+  </div>
+  <div class="modify-task__info-box">
+    <span class="modify-task__info">
+      {{ todo.completionData === null ? "Utworzono: " : "Wykonano: " }}
+      {{ displayedDate | date : "fullDate" }}
+    </span>
+  </div>
+</section>
+<app-modal
+  *ngIf="openModal"
+  (close)="closeModal()"
+  (delete)="deleteTodo()"
+  [modal_title]="'Usuwanie zadania'"
+  [modal_text]="'Czy aby na pewno chcesz usunać  to zadanie?'"
+></app-modal>

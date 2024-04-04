@@ -1,0 +1,734 @@
+{
+  "todo": [
+    {
+      "name": "12111111",
+      "isCompleteted": true,
+      "creationDate": "2023-08-24T14:03:16.455Z",
+      "completionData": "2023-08-28T20:21:18.823Z",
+      "isImportant": true,
+      "steps": [
+        {
+          "id": 1,
+          "name": "12",
+          "isCompleteted": true
+        },
+        {
+          "id": 2,
+          "name": "12 1211a112aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "isCompleteted": true
+        },
+        {
+          "id": 3,
+          "name": "1 11",
+          "isCompleteted": false
+        },
+        {
+          "id": 4,
+          "name": "ads 13a",
+          "isCompleteted": true
+        },
+        {
+          "id": 5,
+          "name": "1 ",
+          "isCompleteted": false
+        },
+        {
+          "id": 6,
+          "name": "qew ",
+          "isCompleteted": false
+        },
+        {
+          "id": 7,
+          "name": "qe ",
+          "isCompleteted": false
+        },
+        {
+          "id": 8,
+          "name": "q q",
+          "isCompleteted": false
+        },
+        {
+          "id": 9,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 10,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 11,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 12,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 13,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 14,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 15,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 16,
+          "name": "asd ",
+          "isCompleteted": false
+        },
+        {
+          "id": 17,
+          "name": "ads ",
+          "isCompleteted": false
+        },
+        {
+          "id": 18,
+          "name": "",
+          "isCompleteted": false
+        },
+        {
+          "id": 19,
+          "name": "ad ",
+          "isCompleteted": false
+        },
+        {
+          "id": 20,
+          "name": "ads ",
+          "isCompleteted": false
+        },
+        {
+          "id": 21,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 22,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 23,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 24,
+          "name": "fda ",
+          "isCompleteted": false
+        },
+        {
+          "id": 25,
+          "name": "adda ",
+          "isCompleteted": false
+        },
+        {
+          "id": 26,
+          "name": "u ",
+          "isCompleteted": false
+        },
+        {
+          "id": 27,
+          "name": "uuuu ",
+          "isCompleteted": false
+        },
+        {
+          "id": 28,
+          "name": "pooyuo ",
+          "isCompleteted": false
+        },
+        {
+          "id": 29,
+          "name": "p ",
+          "isCompleteted": false
+        },
+        {
+          "id": 30,
+          "name": "'' ",
+          "isCompleteted": false
+        }
+      ],
+      "id": 3,
+      "plannedDate": "2023-08-15T22:00:00.000Z",
+      "isTodayDay": false
+    },
+    {
+      "name": "qqeqqaasdaa",
+      "isCompleteted": false,
+      "creationDate": "2023-08-24T22:33:11.012Z",
+      "completionData": null,
+      "isImportant": true,
+      "steps": [
+        {
+          "id": 1,
+          "name": "ADS ",
+          "isCompleteted": true
+        },
+        {
+          "id": 3,
+          "name": "Kolejny kroka",
+          "isCompleteted": false
+        },
+        {
+          "id": 4,
+          "name": "aaaa ",
+          "isCompleteted": true
+        }
+      ],
+      "id": 4,
+      "plannedDate": "2023-08-16T22:00:00.000Z",
+      "isTodayDay": true
+    },
+    {
+      "name": "DSAaaaaaaaaaaaaaaaaaaaaasad",
+      "isCompleteted": true,
+      "creationDate": "2023-08-29T20:58:38.682Z",
+      "completionData": "2023-09-06T12:29:23.039Z",
+      "isImportant": false,
+      "steps": [],
+      "id": 5,
+      "plannedDate": "2023-08-22T22:00:00.000Z"
+    },
+    {
+      "name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "isCompleteted": true,
+      "creationDate": "2023-08-29T21:34:17.837Z",
+      "completionData": "2023-08-29T21:34:32.366Z",
+      "isImportant": false,
+      "steps": [
+        {
+          "id": 1,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 2,
+          "name": "q ",
+          "isCompleteted": false
+        },
+        {
+          "id": 3,
+          "name": "q ",
+          "isCompleteted": false
+        }
+      ],
+      "id": 6,
+      "plannedDate": "2023-08-21T22:00:00.000Z",
+      "isTodayDay": false
+    },
+    {
+      "name": "qe",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T12:24:05.097Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 9
+    },
+    {
+      "name": "ad",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T12:37:08.228Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 15
+    },
+    {
+      "name": "adsa",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T12:43:15.889Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": "2023-09-06T12:43:15.889Z",
+      "isTodayDay": false,
+      "id": 19
+    },
+    {
+      "name": "ads",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:28:43.031Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "id": 21
+    },
+    {
+      "name": "ads",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:28:44.242Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 22
+    },
+    {
+      "name": "da",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:28:45.562Z",
+      "completionData": null,
+      "isImportant": true,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 24
+    },
+    {
+      "name": "da",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:28:48.402Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 28
+    },
+    {
+      "name": "ad",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:32:31.633Z",
+      "completionData": null,
+      "isImportant": true,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 30
+    },
+    {
+      "name": "ad",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:32:57.014Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 31
+    },
+    {
+      "name": "asd",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T20:33:00.435Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 32
+    },
+    {
+      "name": "n",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T21:35:21.952Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": "2023-09-29T22:00:00.000Z",
+      "isTodayDay": true,
+      "id": 33
+    },
+    {
+      "name": "ndaS",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T21:35:24.714Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "id": 36
+    },
+    {
+      "name": "n",
+      "isCompleteted": false,
+      "creationDate": "2023-09-06T21:35:25.456Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "id": 37
+    },
+    {
+      "name": "kupno laotpaaa",
+      "isCompleteted": true,
+      "creationDate": "2023-09-07T16:05:54.165Z",
+      "completionData": "2023-09-13T21:39:20.163Z",
+      "isImportant": true,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "id": 38,
+      "user_id": 6
+    },
+    {
+      "name": "daads",
+      "isCompleteted": true,
+      "creationDate": "2023-09-13T19:42:54.571Z",
+      "completionData": "2023-09-13T21:28:34.995Z",
+      "isImportant": true,
+      "steps": [],
+      "plannedDate": "2023-09-18T22:00:00.000Z",
+      "isTodayDay": false,
+      "user_id": 6,
+      "id": 39
+    },
+    {
+      "name": "adsad",
+      "isCompleteted": true,
+      "creationDate": "2023-09-13T19:54:12.036Z",
+      "completionData": "2023-09-13T21:39:19.635Z",
+      "isImportant": true,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 40
+    },
+    {
+      "name": "nauka do kolokwium",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T20:17:53.202Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [
+        {
+          "id": 1,
+          "name": "",
+          "isCompleteted": false
+        }
+      ],
+      "plannedDate": "2023-10-18T22:00:00.000Z",
+      "isTodayDay": true,
+      "user_id": 7,
+      "id": 41
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:47.160Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 42
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:49.446Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 43
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:49.751Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 44
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:49.950Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 45
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:50.131Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 46
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:50.299Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 47
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:50.472Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 48
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:50.630Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 49
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:34:50.940Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 51
+    },
+    {
+      "name": "a",
+      "isCompleteted": true,
+      "creationDate": "2023-09-13T21:34:51.217Z",
+      "completionData": "2023-09-13T21:39:16.949Z",
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 53
+    },
+    {
+      "name": "a",
+      "isCompleteted": true,
+      "creationDate": "2023-09-13T21:34:51.520Z",
+      "completionData": "2023-09-13T21:39:15.400Z",
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 6,
+      "id": 55
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:39:27.790Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "user_id": 6,
+      "id": 56
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:39:28.182Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "user_id": 6,
+      "id": 57
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:39:28.456Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "user_id": 6,
+      "id": 58
+    },
+    {
+      "name": "a",
+      "isCompleteted": false,
+      "creationDate": "2023-09-13T21:39:28.900Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "user_id": 6,
+      "id": 59
+    },
+    {
+      "name": "das",
+      "isCompleteted": false,
+      "creationDate": "2023-09-19T16:04:18.543Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": true,
+      "user_id": 7,
+      "id": 61
+    },
+    {
+      "name": "adsda",
+      "isCompleteted": false,
+      "creationDate": "2023-09-19T16:04:24.301Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [
+        {
+          "id": 1,
+          "name": "DSADSAASD ",
+          "isCompleteted": false
+        },
+        {
+          "id": 2,
+          "name": "ASD ",
+          "isCompleteted": false
+        },
+        {
+          "id": 3,
+          "name": "ASDA ",
+          "isCompleteted": false
+        }
+      ],
+      "plannedDate": "2023-10-12T22:00:00.000Z",
+      "isTodayDay": true,
+      "user_id": 7,
+      "id": 62
+    },
+    {
+      "name": "DAs",
+      "isCompleteted": true,
+      "creationDate": "2023-10-15T18:05:33.621Z",
+      "completionData": "2023-10-16T10:44:19.619Z",
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": null,
+      "isTodayDay": false,
+      "user_id": 7,
+      "id": 63
+    },
+    {
+      "name": "lkn",
+      "isCompleteted": true,
+      "creationDate": "2023-10-16T10:31:12.769Z",
+      "completionData": "2023-10-16T10:44:16.940Z",
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": "2023-10-16T10:31:12.769Z",
+      "isTodayDay": false,
+      "user_id": 7,
+      "id": 64
+    },
+    {
+      "name": "jkj",
+      "isCompleteted": false,
+      "creationDate": "2023-10-16T10:48:29.994Z",
+      "completionData": null,
+      "isImportant": false,
+      "steps": [],
+      "plannedDate": "2023-10-18T22:00:00.000Z",
+      "isTodayDay": true,
+      "user_id": 7,
+      "id": 65
+    }
+  ],
+  "users": [
+    {
+      "email": "daadada@wp.pl",
+      "userName": "aadsda",
+      "password": "daadada",
+      "confirmPassword": "daadada",
+      "id": 1
+    },
+    {
+      "email": "dadsda@wp.pl",
+      "userName": "adsda",
+      "password": "dadsda",
+      "confirmPassword": "dadsda",
+      "id": 2
+    },
+    {
+      "email": "adsada@wp.pl",
+      "userName": "adsada",
+      "password": "adsada",
+      "confirmPassword": "adsada",
+      "id": 3
+    },
+    {
+      "email": "qqqqqqqqqqqq@wp.pl",
+      "userName": "qqqqqqqqqqqq",
+      "password": "qqqqqqqqqqqq",
+      "confirmPassword": "qqqqqqqqqqqq",
+      "id": 4
+    },
+    {
+      "email": "eeeeeeeeeee@wp.pl",
+      "userName": "eeeeeeeeeee",
+      "password": "eeeeeeeeeee",
+      "confirmPassword": "eeeeeeeeeee",
+      "id": 5
+    },
+    {
+      "email": "user@wp.pl",
+      "userName": "user11",
+      "password": "user11",
+      "confirmPassword": "user11",
+      "id": 6
+    },
+    {
+      "email": "user12@wp.pl",
+      "userName": "user12",
+      "password": "user12",
+      "confirmPassword": "user12",
+      "id": 7
+    }
+  ]
+}

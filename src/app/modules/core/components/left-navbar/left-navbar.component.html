@@ -1,0 +1,72 @@
+<mat-list>
+  <button
+    [ngClass]="{ 'active-link': currentCategory === 'myDay' }"
+    mat-list-item
+    (click)="selectCategory('myDay')"
+    (click)="closedLeftMenu()"
+  >
+    <div class="line"></div>
+    <div class="box">
+      <mat-icon
+        class="icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="light_mode"
+      ></mat-icon>
+      <span class="title"> Mój dzień </span>
+    </div>
+  </button>
+  <button
+    [ngClass]="{ 'active-link': currentCategory === 'important' }"
+    mat-list-item
+    (click)="selectCategory('important')"
+    (click)="closedLeftMenu()"
+  >
+    <div class="line"></div>
+    <div class="box">
+      <mat-icon
+        class="icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="star"
+      ></mat-icon>
+      <span class="title"> Ważne </span>
+    </div>
+  </button>
+
+  <button
+    [ngClass]="{ 'active-link': currentCategory === 'planned' }"
+    class="active-link"
+    mat-list-item
+    (click)="selectCategory('planned')"
+    (click)="closedLeftMenu()"
+  >
+    <div class="line"></div>
+    <div class="box">
+      <mat-icon
+        class="icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="calendar_view_week"
+      ></mat-icon>
+      <span class="title"> Zaplanowane </span>
+    </div>
+  </button>
+  <button
+    [ngClass]="{ 'active-link': currentCategory === 'all' }"
+    mat-list-item
+    (click)="selectCategory('all')"
+    (click)="closedLeftMenu()"
+  >
+    <div class="line"></div>
+    <div class="box">
+      <mat-icon
+        class="icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+      <span class="title"> Zadania </span>
+    </div>
+  </button>
+</mat-list>

@@ -1,0 +1,80 @@
+<section class="login">
+  <h2 class="login__title">Zarejestruj się</h2>
+  <form
+    (ngSubmit)="onRegister()"
+    [formGroup]="registerForm"
+    class="login__form"
+  >
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Nazwa użytkownika</mat-label>
+        <input class="input" matInput formControlName="userName" />
+        <mat-error *ngIf="controls.userName.invalid"
+          >{{ getErrorMessage(controls.userName) }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Wpisz swoje hasło</mat-label>
+        <input
+          class="input"
+          formControlName="password"
+          matInput
+          [type]="hide ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+        <mat-error *ngIf="controls.password.invalid"
+          >{{ getErrorMessage(controls.password) }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Potwierdz hasło</mat-label>
+        <input
+          class="input"
+          formControlName="confirmPassword"
+          matInput
+          [type]="hideConfirm ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hideConfirm = !hideConfirm"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hideConfirm"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+        <mat-error *ngIf="controls.confirmPassword.invalid"
+          >{{ getErrorMessage(controls.confirmPassword) }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Adres Email</mat-label>
+        <input class="input" matInput formControlName="email" />
+        <mat-error *ngIf="controls.email.invalid">
+          {{ getErrorMessage(controls.email) }}</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <button class="login__btn" type="submit" mat-raised-button color="primary">
+      Zarejestruj się
+    </button>
+    <p class="login__text">
+      Masz konto?
+      <button routerLink="/login" class="signIn-btn">Zaloguj się</button>.
+    </p>
+  </form>
+</section>

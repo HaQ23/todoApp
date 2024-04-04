@@ -1,0 +1,100 @@
+.todo-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 6px;
+  list-style: none;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #fff;
+  }
+  .todo-item-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 0.5rem;
+    .steps-info {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 0.5rem;
+      }
+      font-size: 1.2rem;
+      color: #595959;
+    }
+  }
+  .todo-item {
+    white-space: normal;
+    height: auto;
+  }
+  .box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .isCompleted-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #595959;
+    border-radius: 60%;
+    width: 24px;
+    height: 24px;
+    transition: background-color 0.2;
+    cursor: pointer;
+    &:hover {
+      .icon {
+        opacity: 1;
+      }
+    }
+    .icon {
+      opacity: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 60%;
+      stroke: #000;
+      transition: opacity 0.2s, border-color 0.2s;
+    }
+    &.isCompleted {
+      background-color: #3f51b5;
+      border-color: #3f51b5;
+      .icon {
+        opacity: 1;
+        stroke: #fff;
+      }
+    }
+  }
+  .isImportant-btn {
+    border: none;
+    background-color: transparent;
+    color: #3f51b5;
+    cursor: pointer;
+    .icon {
+      transition: fill 0.3s;
+    }
+    &.isImportant,
+    &:hover {
+      .icon {
+        fill: #3f51b5;
+      }
+    }
+  }
+}
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+.additional-options {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}

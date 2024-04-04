@@ -1,0 +1,60 @@
+<li class="step-item">
+  <button
+    matTooltip="{{
+      todo.isImportant ? 'Oznacz jako wykonane' : 'Oznacz jako niewykonane'
+    }}"
+    [matTooltipShowDelay]="showDelay.value"
+    (click)="changeStatusStep()"
+    class="isCompleted-btn"
+    [ngClass]="{ isCompleted: step.isCompleteted }"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon"
+    >
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+  </button>
+  <span
+    [ngClass]="{ isCompleted: todo.isCompleteted }"
+    #textStep
+    (blur)="changeNameStep()"
+    contenteditable
+    role="textbox"
+    class="step-input"
+    [ngClass]="{ 'text-decoration-line-through': step.isCompleteted }"
+    >{{ step.name }}</span
+  >
+  <button class="delete-btn" (click)="showDeleteTodoModal()">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon"
+    >
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+</li>
+<app-modal
+  *ngIf="openModal"
+  (close)="closeModal()"
+  (delete)="deleteStep()"
+  [modal_title]="'Usuwanie kroku'"
+  [modal_text]="'Czy aby na pewno chcesz usunać  ten krok?'"
+></app-modal>

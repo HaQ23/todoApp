@@ -1,0 +1,111 @@
+<li class="todo-list-item">
+  <div class="box">
+    <button
+      matTooltip="{{
+        todo.isImportant ? 'Oznacz jako wykonane' : 'Oznacz jako niewykonane'
+      }}"
+      [matTooltipShowDelay]="showDelay.value"
+      class="isCompleted-btn"
+      (click)="changeTodoStatus($event)"
+      [ngClass]="{ isCompleted: todo.isCompleteted }"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon"
+      >
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </button>
+    <div class="todo-item-box">
+      <span
+        class="todo-item"
+        [ngClass]="{ 'text-decoration-line-through': todo.isCompleteted }"
+        >{{ i + 1 }}. {{ todo.name }}</span
+      >
+      <div class="additional-options">
+        <span *ngIf="todo.steps.length > 0" class="steps-info">
+          Kroki: {{ completedStepsCount }} z {{ todo.steps.length }}
+        </span>
+        <span *ngIf="todo.plannedDate" class="steps-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather-calendar icon"
+          >
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          {{ todo.plannedDate | customDate }}
+        </span>
+        <span *ngIf="todo.isTodayDay" class="steps-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          Mój dzien
+        </span>
+      </div>
+    </div>
+  </div>
+  <button
+    matTooltip="{{
+      todo.isImportant ? 'Oznacz jako nieważne' : 'Oznacz jako ważne'
+    }}"
+    [matTooltipShowDelay]="showDelay.value"
+    class="isImportant-btn"
+    (click)="changeImportanceTodo($event)"
+    [ngClass]="{ isImportant: todo.isImportant }"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="#fff"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon feather-star"
+    >
+      <polygon
+        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+      ></polygon>
+    </svg>
+  </button>
+</li>

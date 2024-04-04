@@ -1,0 +1,24 @@
+<nav class="nav">
+  <mat-toolbar>
+    <button (click)="navigateToHome()" class="nav__logo">ToDo App</button>
+    <div class="nav__options">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="settings"
+      ></mat-icon>
+      <button
+        *ngIf="!user"
+        (click)="navigateToLogin()"
+        mat-raised-button
+        color="primary"
+      >
+        Zaloguj się
+      </button>
+      <button *ngIf="user" (click)="logout()" mat-raised-button color="primary">
+        Wyloguj się
+      </button>
+      <button *ngIf="user" mat-raised-button color="primary">Profil</button>
+    </div>
+  </mat-toolbar>
+</nav>

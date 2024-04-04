@@ -1,0 +1,34 @@
+<section class="todos-section" [ngClass]="getCategoryClass()">
+  <div class="todos-wrapper">
+    <div class="box">
+      <button class="ham-btn" (click)="openLeftMenu()">
+        <mat-icon
+          class="icon"
+          aria-hidden="false"
+          aria-label="Example home icon"
+          >view_headline</mat-icon
+        >
+      </button>
+      <h2 class="section-title">
+        <mat-icon
+          class="icon"
+          aria-hidden="false"
+          aria-label="Example home icon"
+          >{{ iconName }}</mat-icon
+        >
+        <span class="text"> {{ sectionTitle }} </span>
+      </h2>
+      <app-todo-list
+        [category]="category"
+        (selectedTask)="handleSelectedTask($event)"
+      >
+      </app-todo-list>
+    </div>
+    <app-add-task [category]="category"></app-add-task>
+  </div>
+  <app-modify-task
+    *ngIf="selectedTask && !closeBtnCliked"
+    [todo]="selectedTask"
+    (closeBtnCliked)="closeModifySection($event)"
+  ></app-modify-task>
+</section>

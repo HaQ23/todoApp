@@ -1,0 +1,203 @@
+@import "../todo-list/todo/todo.component.scss";
+.modify-task {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 100%;
+  border-top: 2px solid #f2f2f2;
+  width: 100vw;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 1.25rem 1.5rem;
+  }
+  &__info-box {
+    padding: 2rem;
+    border-top: 2px solid #f2f2f2;
+    color: #6c6c6c;
+    text-align: center;
+  }
+  &__main-content {
+    margin-top: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+  }
+}
+.input-text-box {
+  transition: background-color 0.2s;
+  background-color: #f2f2f2;
+  &:hover {
+    background-color: #e1e1e1;
+  }
+
+  &:focus-within {
+    background-color: #e1e1e1;
+  }
+}
+.todo-list-item {
+  .box {
+    flex-grow: 1;
+    padding-right: 1rem;
+  }
+  .todo-item {
+    flex-grow: 1;
+    font-size: 18px;
+    overflow-y: hidden;
+    height: auto;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.close-btn {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+.delete-btn {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.add-step-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  max-height: 100px;
+  overflow: hidden;
+  &:focus-within {
+    .stepIsCompleted-btn {
+      border: 2px solid #595959;
+      background-color: #f2f2f2;
+      .plus-icon {
+        display: none;
+      }
+      .done-icon {
+        display: block;
+      }
+      &:hover {
+        .icon {
+          opacity: 1;
+        }
+      }
+    }
+    .add-step-input {
+      color: #000000;
+      font-weight: normal;
+    }
+  }
+  .add-step-input {
+    color: #3f51b5;
+
+    font-weight: 500;
+  }
+  .stepIsCompleted-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 60%;
+    width: 18px;
+    height: 18px;
+    transition: background-color 0.2;
+    background-color: transparent;
+    cursor: pointer;
+    .icon {
+      opacity: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 60%;
+      stroke: #000;
+      transition: opacity 0.2s, border-color 0.2s;
+    }
+    .done-icon {
+      display: none;
+    }
+    .plus-icon {
+      display: block;
+      opacity: 1;
+      width: 18px;
+      height: 18px;
+      stroke: #3f51b5;
+    }
+    &.isCompleted {
+      background-color: #3f51b5;
+      border-color: #3f51b5;
+      .icon {
+        opacity: 1;
+        stroke: #fff;
+      }
+    }
+  }
+  .add-step-input {
+    white-space: normal;
+    word-break: break-all;
+    outline: none;
+  }
+}
+mat-form-field {
+  margin-top: 1rem;
+  position: relative;
+  .mat-form-input-box {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .data-input {
+    color: #3f51b5;
+    font-weight: 500;
+    &::placeholder {
+      color: #000;
+      font-weight: 400;
+    }
+  }
+  mat-icon {
+    color: #3f51b5;
+  }
+}
+[mat-icon-button] {
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+}
+
+.addTodayDay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-top: -15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  &:hover {
+    background-color: #e1e1e1;
+  }
+  &.isAdd {
+    color: #3f51b5;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 992px) {
+  .modify-task {
+    position: static;
+    width: auto;
+  }
+}

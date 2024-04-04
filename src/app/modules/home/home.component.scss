@@ -1,0 +1,12 @@
+mat-sidenav-container {
+  overflow-y: auto;
+  height: 100%;
+}
+mat-sidenav,
+mat-sidenav-content {
+  background-color: #f5f5f5;
+  border: none;
+}
+mat-sidenav-content {
+  height: 100%;
+}

@@ -1,0 +1,14 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" [(opened)]="sidenavOpened">
+    <app-left-navbar
+      (closeLeftMenu)="toggleOpenMenu($event)"
+      (categorySelected)="onCategorySelected($event)"
+    ></app-left-navbar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-todo-view
+      [category]="selectedCategory"
+      (openedLeftMenu)="toggleOpenMenu($event)"
+    ></app-todo-view>
+  </mat-sidenav-content>
+</mat-sidenav-container>

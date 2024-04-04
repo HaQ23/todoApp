@@ -1,0 +1,41 @@
+<ul class="todo-list">
+  <ng-container *ngFor="let todo of notDoneTodos; index as i">
+    <app-todo
+      (click)="onTaskClick(todo)"
+      [todo]="todo"
+      [i]="i"
+      [id]="todo.id"
+    ></app-todo>
+  </ng-container>
+  <button
+    *ngIf="category === 'all' && todos.length !== 0"
+    [class.active]="showDoneTodos"
+    (click)="showDoneTodo()"
+    mat-raised-button
+    class="done-btn active"
+  >
+    <mat-icon class="icon">navigate_next</mat-icon>
+    <span class="text"> Wykonane: </span>
+    <span class="count">{{ doneTodos.length }}</span>
+  </button>
+  <ng-container *ngIf="showDoneTodos && category === 'all'">
+    <ng-container *ngFor="let todo of doneTodos; index as i">
+      <app-todo
+        (click)="onTaskClick(todo)"
+        [todo]="todo"
+        [i]="i"
+        [id]="todo.id"
+      ></app-todo>
+    </ng-container>
+  </ng-container>
+  <div
+    *ngIf="
+      (doneTodos.length === 0 && notDoneTodos.length === 0) ||
+      (notDoneTodos.length === 0 && category !== 'all')
+    "
+    class="todo-list__lackOfTask"
+  >
+    <img src="../../../../../assets/icons/done.png" alt="" />
+    <p class="todo-list__info">Brak aktualnie zadań do wyswietlenia</p>
+  </div>
+</ul>

@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f5f5f5;
+}
+textarea,
+button {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.close-btn {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+.line1 {
+  left: 50%;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  left: 50%;
+  transform: rotate(-45deg);
+}
+
+.close-btn.active .line1 {
+  transform: rotate(90deg);
+}
+
+.close-btn.active .line2 {
+  transform: rotate(90deg);
+}

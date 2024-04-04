@@ -1,0 +1,18 @@
+<ng-template #templatePortalContent>
+  <div class="modal">
+    <h3 class="modal__title">
+      {{ modal_title }}
+    </h3>
+    <p class="modal__text">
+      {{ modal_text }}
+    </p>
+    <div class="modal__buttons-box">
+      <button (click)="deleteTask()" mat-raised-button color="warn">
+        Usuń
+      </button>
+      <button (click)="closeModal()" mat-raised-button color="primary">
+        Zamknij
+      </button>
+    </div>
+  </div>
+</ng-template>
